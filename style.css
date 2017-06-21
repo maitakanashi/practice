@@ -1,12 +1,4 @@
 @charset "utf-8";
-
-.test {
-    display: block;
-    width: 980px;
-    margin: 0 auto;
-}
-
-
 body {
   margin: 0;
   padding: 0;
@@ -36,9 +28,9 @@ p {
 }
 img { vertical-align: bottom; }
 
-*/---------------------------
+/*---------------------------
 見出し
-*/---------------------------
+------------------------*/
 #main h1{
     background-image: url(images/header_bg.jpg);
     padding: 30px 30px 30px 20px;
@@ -106,9 +98,9 @@ img { vertical-align: bottom; }
     margin-bottom: 10px;
 }
 
-*/-------------------------
+/*-------------------------
 講座案内
-*/-------------------------
+------------------------*/
 
 #course table {
     width: 100%;
@@ -128,9 +120,9 @@ img { vertical-align: bottom; }
     width: 5em;
 }
 
-*/---------------------------
+/*-------------------------
 ギャラリー
-*/---------------------------
+---------------------------*/
 
 #gallery ul {
     list-style: none;
@@ -155,21 +147,13 @@ img { vertical-align: bottom; }
     margin-right: 0;
 }
 
-*/---------------------------
+/*-------------------------
 ヘッダー
-*/---------------------------
-
-header {
+---------------------------*/
+.test  {
     width: 980px;
     margin: 0 auto;
 }
-
-.test {
-    display:block;
-    width: 980px;
-    margin: 0 auto;
-}
-
 
 
 header h1 {
@@ -182,9 +166,9 @@ header #header_contact {
     margin: 35px 0 0;
 }
 
-*/---------------------------
+/*---------------------------
 グローバルナビゲーション
-*/---------------------------
+---------------------------*/
 
 #global_navi {
     width: 980px;
@@ -307,9 +291,9 @@ header #header_contact {
     margin-right: 5px;
 }
 
-*/--------------------------
+/*--------------------------
 リンクボタン
-*/--------------------------
+-------------------------*/
 #side_contact .contact_button {
     display: inline-block;
     background: #f1ede4;
@@ -331,9 +315,9 @@ header #header_contact {
     color: #fff;
 }
 
-*/----------------------------
+/*----------------------------
 フォーム
-*/----------------------------
+-------------------------*/
 
 #entry dl {
     background-color: #f1ede4;
@@ -412,9 +396,9 @@ header #header_contact {
     background-color: #c7ae81;
 }
 
-*/------------------------
+/*------------------------
 フッター
-*/------------------------
+------------------------*/
 
 .test3 {
     background-color: #352b23;
@@ -460,9 +444,9 @@ footer small {
     color: #fff;
 }
 
-*/------------------------
+/*------------------------
 パンくずリスト
-*/------------------------
+------------------------*/
 #breadcrumb {
     font-size: smaller;
 }
@@ -487,13 +471,16 @@ footer small {
 }
 
 @media screen and (max-width : 767px){
+.test {
+    width: 100%;
+}
     img {
+        height: auto;
         max-width: 100%;
     }
-}
 
   header,
-  #global_vavi,
+  #global_navi,
   #sidebar,
   #wrapper{
       width: 100%;
@@ -503,50 +490,57 @@ footer small {
       float: none;
       text-align: center;
   }
+
   header h1 img {
       width: 50%;
   }
+
   header #header_contact {
       display: none;
   }
 
     #global_navi ul li {
-        width: 50%;
-        padding: 0.5px;
-        margin: 0;
-        box-sizing: border-box;
+      width: 50%;
+      padding: 0.5px;
+      margin: 0;
+      box-sizing: border-box;
     }
+
     #global_navi ul li a {
         margin: 0;
     }
-      #global_navi ul li:last-child {
-          width: 100%;
-      }
-   #main {
-       width: 100%;
-       padding: 0 5%;
-       box-sizing: border-box;
-   }
-   #main figure {
-       text-align: center;
-   }
-   #main_visual {
-       width: 100%;
-       height: auto;
-   }
-   #point figure {
-       float: none;
-       margin: 0 0 11px 0;
-   }
-    #side_banner ul li {
-        text-align: center;
-        margin: 11px auto;
+
+    #global_navi ul li:last-child {
+        width: 100%;
     }
-  #side_contact address img {
-      width: 14px;
-      height: 20px;
+
+    #main {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    #main figure {
+        text-align: center;
+    }
+
+    #main_visual {
+        width: 100%;
+        height: auto;
+    }
+
+  #point figure {
+    float: none;
+    margin: 0 0 11px 0;
   }
-  
 
+    #side_banner ul li {
+      text-align: center;
+      margin: 11px auto;
+    }
 
-
+  #side_contact address img {
+    width: 14px;
+    height: 20px;
+  }
+}
